@@ -1,0 +1,28 @@
+[Unit]
+Description=Directory Watcher Service
+Documentation=https://example.com/directory-watcher
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+User=kali
+Group=kali
+ExecStart=/usr/bin/python3 /home/kali/bsm/directory_watcher.py
+WorkingDirectory=/home/kali
+Restart=on-failure
+RestartSec=30
+StandardOutput=append:/var/log/directory-watcher.log
+StandardError=append:/var/log/directory-watcher.error.log
+
+# Güvenlik ayarları
+ProtectSystem=full
+ProtectHome=read-only
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,5 @@
+{"event_type": "created", "src_path": "/home/kali/bsm/test/testfile.txt", "timestamp": "2024-12-21 12:20:18"}
+{"event_type": "opened", "src_path": "/home/kali/bsm/test/testfile.txt", "timestamp": "2024-12-21 12:20:18"}
+{"event_type": "modified", "src_path": "/home/kali/bsm/test/testfile.txt", "timestamp": "2024-12-21 12:20:18"}
+{"event_type": "closed", "src_path": "/home/kali/bsm/test/testfile.txt", "timestamp": "2024-12-21 12:20:18"}
+{"event_type": "deleted", "src_path": "/home/kali/bsm/test/testfile.txt", "timestamp": "2024-12-21 12:20:23"}
